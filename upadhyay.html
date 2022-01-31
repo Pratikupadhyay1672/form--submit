@@ -1,0 +1,92 @@
+<html>
+<head>
+  <title> Form </title>
+</head>
+<script>
+function myFunction() {
+  document.getElementById("registration").submit();
+}
+</script>
+
+<style>
+body {
+ 
+    background-color: #313131;
+    padding:80px;
+    color: white;
+    text-align: center;
+}
+h1 {
+    text-shadow: 2px 1.3px 2px;
+    text-align: center;
+}
+.round {
+    border-radius: 8px;
+    background-color: rgb(42,42,42);
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+}
+.hover {
+    border: 1px solid white;
+    color: white;
+    background:black;
+    padding: 5px 10px;
+    border-color: white;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+}
+.hover:hover {
+    background-color: white;
+    color: black;
+}
+legend {
+    border: 1px solid white;
+    color: white;
+    background: black;
+    border-radius: 8px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+fieldset {
+    width: 350px;
+    padding: 20px 10px 20px 10px;
+    border: 1px solid white;
+    border-radius: 8px; 
+}
+</style>
+<body>
+  <div>
+    <h1>Sage university</h1>
+  </div>
+  <div>
+    <center>
+    <form id ="registration" action="example3.html">
+     <fieldset>
+        <legend>Form</legend>	
+      <label for="first name">Name:</label>
+      <input type="text" name="username" class="round"><br /><br />
+
+      <label for="Last name">Last Name:</label>
+      <input type="text" name="username" class="round"><br /><br />
+
+      <label for="email">email:</label>
+      <input type="email" class="round"><br /><br />
+
+      <label for="password">password :</label>
+      <input type="password" name="username" class="round"><br /><br />
+
+      <label for="confirm">confirm:</label>
+      <input type="password" name="username" class="round"><br /><br />
+       <input type="button" onclick="myFunction()" value="Submit" class="hover">
+ 
+    
+      </fieldset>
+    </form>
+  </center>
+  </div>
+
+</body>
+</html>
